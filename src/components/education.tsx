@@ -9,7 +9,7 @@ export function Education() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" >
         <div className="flex items-center" >
           <img
-            alt="XYZ University Logo"
+            alt="Columbia University Logo"
             className="w-24 h-24 object-cover rounded-lg"
             height="100"
             src="/images/columbia.jpeg"
@@ -26,7 +26,7 @@ export function Education() {
         </div>
         <div className="flex items-center" >
           <img
-            alt="ABC University Logo"
+            alt="Télécom Paris Logo"
             className="w-24 h-24 object-cover rounded-lg"
             height="100"
             src="/images/telecom.webp"

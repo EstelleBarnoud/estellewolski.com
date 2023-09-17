@@ -5,7 +5,7 @@ export function Education() {
   return (
 
     <section className="mb-16" id="education">
-      <h2 className="text-4xl font-bold text-black dark:text-white mb-8" >
+      <h2 className="text-4xl text-black dark:text-white mb-8" >
         Education
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" >

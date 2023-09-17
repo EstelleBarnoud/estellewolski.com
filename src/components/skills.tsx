@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
 
 export function Skills() {
 

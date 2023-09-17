@@ -12,6 +12,7 @@ export default function Home() {
       <Navigation />
       <About />
       <Work />
+      <Separator className="my-8" />
       <Education />
       <Separator className="my-8" />
       <Skills />

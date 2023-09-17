@@ -162,11 +162,11 @@ export function Skills() {
 
   return (
 
-    <section className="mb-16" id="skills">
+    <section className="px-4 mt-32" id="skills">
       <h2 className="text-4xl text-black dark:text-white mb-8" >
         Skills
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         { skills.map((skill, index) => (
           <div key={index}>
             <h3 className="text-xl text-black dark:text-white mb-4" >

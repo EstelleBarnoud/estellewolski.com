@@ -76,10 +76,10 @@ export function Work() {
           <Card key={index} className="group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
             <Image className="relative w-full h-0" src={`/images/${job.image}`} alt={`${job.company} banner`} width={200} height={200} layout="responsive" objectFit="cover" />
             <CardHeader>
-              <CardTitle className="text-lg font-semibold group-hover:text-gray-800">
+              <CardTitle className="text-lg font-semibold group-hover:text-gray-800 dark:group-hover:text-gray-200">
                 {job.title}
               </CardTitle>
-              <CardDescription className="text-sm text-gray-500 group-hover:text-gray-700">
+              <CardDescription className="text-sm text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-400">
                 {job.company}
               </CardDescription>
             </CardHeader>

@@ -42,7 +42,7 @@ export function Contact() {
 
   return (
 
-    <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+    <section className="container flex items-center justify-center min-h-screen px-4 mx-auto" id="contact">
       <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
         {socials.map((social, index) => (
           <Card key={index}>
@@ -83,7 +83,7 @@ export function Contact() {
           </Card>
         ))}
       </div>
-    </div>
+    </section>
 
   )
 

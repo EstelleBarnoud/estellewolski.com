@@ -74,7 +74,9 @@ export function Work() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {jobs.map((job, index) => (
           <Card key={index} className="group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
-            <Image className="relative w-full h-0" src={`/images/${job.image}`} alt={`${job.company} banner`} width={200} height={200} layout="responsive" objectFit="cover" />
+            <div className="max-h-64 overflow-hidden flex items-center">
+              <Image className="w-full h-0" src={`/images/${job.image}`} alt={`${job.company} banner`} width={200} height={200} layout="responsive" objectFit="cover" />
+            </div>
             <CardHeader>
               <CardTitle className="text-lg font-semibold group-hover:text-gray-800 dark:group-hover:text-gray-200">
                 {job.title}

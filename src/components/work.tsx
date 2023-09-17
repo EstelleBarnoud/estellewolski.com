@@ -66,7 +66,7 @@ export function Work() {
       </h2>
       <div className="grid grid-cols-3 gap-4">
         {jobs.map((job, index) => (
-          <Card className="group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
+          <Card key={index} className="group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="text-lg font-semibold group-hover:text-gray-800">
                 {job.title}

@@ -1,6 +1,33 @@
 import Link from "next/link"
 import { ModeToggle } from "@/components/mode-toggle";
 
+const sections = [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "About",
+    href: "#about",
+  },
+  {
+    name: "Work",
+    href: "#work",
+  },
+  {
+    name: "Education",
+    href: "#education",
+  },
+  {
+    name: "Skills",
+    href: "#skills",
+  },
+  {
+    name: "Contact",
+    href: "#contact",
+  },
+]
+
 export function Navigation() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
@@ -40,24 +67,11 @@ export function Navigation() {
           </div>
         </div>
         <div className="space-x-4 md:space-x-8">
-          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#">
-            Home
-          </Link>
-          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#about">
-            About
-          </Link>
-          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#work">
-            Work
-          </Link>
-          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#education">
-            Education
-          </Link>
-          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#skills">
-            Skills
-          </Link>
-          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#contact">
-            Contact
-          </Link>
+          { sections.map((section, index) => (
+            <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href={section.href} key={index}>
+              {section.name}
+            </Link>
+          ))}
         <ModeToggle />
         </div>
       </nav>

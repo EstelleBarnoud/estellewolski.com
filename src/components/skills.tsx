@@ -12,7 +12,7 @@ export function Skills() {
       <div className="grid grid-cols-3 gap-8">
         <div>
           <h3 className="text-xl text-black dark:text-white mb-4" >
-            Analytics engineering &amp; data pipelines
+            Analytics Engineering &amp; Data Pipelines
           </h3>
           <div className="flex flex-wrap gap-2" >
             <Badge className="m-1" variant="outline">
@@ -74,7 +74,7 @@ export function Skills() {
         </div>
         <div>
           <h3 className="text-xl text-black dark:text-white mb-4" >
-            Data sources
+            Data Sources
           </h3>
           <div className="flex flex-wrap gap-2" >
             <Badge className="m-1" variant="outline">
@@ -155,7 +155,7 @@ export function Skills() {
         </div>
         <div>
           <h3 className="text-xl text-black dark:text-white mb-4" >
-            Web Development (side projects)
+            Web Development
           </h3>
           <div className="flex flex-wrap gap-2" >
             <Badge className="m-1" variant="outline">

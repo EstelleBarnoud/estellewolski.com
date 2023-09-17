@@ -1,9 +1,11 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import Image from "next/image"
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 
 const jobs = [
   {
     title: "Senior Analytics Engineer",
     company: "Vercel",
+    image: 'vercel.jpeg',
     description: [
         "Build and maintain reliable, timely data assets at scale through modern data stack",
         "Enable data-driven decisions through self-service analytics",
@@ -13,6 +15,7 @@ const jobs = [
   {
     title: "Senior Analytics Engineer",
     company: "dbt Labs",
+    image: 'dbt-labs.png',
     description: [
         "Led end-to-end data modeling projects from extraction, load & transformation to self-service. Maintained 1000+ models across 30+ sources for self-service",
         "Reduced CI time from 1h+ to <2min through the implementation of a deploy job & model config optimization",
@@ -22,6 +25,7 @@ const jobs = [
   {
     title: "Senior Analytics Engineer, Data Engineer",
     company: "Gojob",
+    image: 'gojob.png',
     description: [
         "Reduced number of customer escalations from 20 to 2 per month by migrating data models from old stack (Airflow, DOMO) to new (dbt, BigQuery, Fivetran)",
         "Cut number of incidents by half by setting up automatic tests both on a daily basis to proactively fix data quality issues and on code changes for continuous integration",
@@ -32,6 +36,7 @@ const jobs = [
   {
     title: "Data Scientist & Analyst, Revenue Growth Management – Advanced Analytics",
     company: "L’Oréal",
+    image: 'loreal.png',
     description: [
       "Saved $10M+ in portfolio & pricing optimization by designing hierarchical Bayes estimation with choice-based conjoint research to understand customer behavior",
       "Used Machine Learning to provide quantitative & qualitative recommendations based on customer insight",
@@ -41,6 +46,7 @@ const jobs = [
   {
     title: "Business Analyst",
     company: "CybelAngel",
+    image: 'cybelangel.png',
     description: [
       "Prepared business data & slides for pitch deck to raise $36M in series B round",
       "Analyzed & forecast marketing and sales performance to recommend data-driven strategies",
@@ -50,6 +56,7 @@ const jobs = [
   {
     title: "Data Science Consultant",
     company: "Bill & Melinda Gates Foundation",
+    image: 'bill-melinda-gates-foundation.jpg',
     description: [
       "Applied statistical machine learning models to build linguistic glossaries",
       "Implemented recurrent neural network to translate languages with limited data",
@@ -67,6 +74,7 @@ export function Work() {
       <div className="grid grid-cols-3 gap-4">
         {jobs.map((job, index) => (
           <Card key={index} className="group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
+            <Image className="relative w-full h-0" src={`/images/${job.image}`} alt={`${job.company} banner`} width={200} height={200} layout="responsive" objectFit="cover" />
             <CardHeader>
               <CardTitle className="text-lg font-semibold group-hover:text-gray-800">
                 {job.title}

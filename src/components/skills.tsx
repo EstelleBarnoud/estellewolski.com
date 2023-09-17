@@ -20,7 +20,7 @@ export function Skills() {
               Python
             </Badge>
             <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/sql.png" alt="Python logo" width={20} height={20} />
+              <Image className="m-2" src="/images/sql.png" alt="SQL logo" width={20} height={20} />
               SQL
             </Badge>
           </div>

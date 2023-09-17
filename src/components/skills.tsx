@@ -12,21 +12,6 @@ export function Skills() {
       <div className="grid grid-cols-3 gap-8">
         <div>
           <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
-            Programming
-          </h3>
-          <div className="flex flex-wrap gap-2" >
-            <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/python.png" alt="Python logo" width={20} height={20} />
-              Python
-            </Badge>
-            <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/sql.png" alt="SQL logo" width={20} height={20} />
-              SQL
-            </Badge>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
             Analytics engineering &amp; data pipelines
           </h3>
           <div className="flex flex-wrap gap-2" >
@@ -53,29 +38,6 @@ export function Skills() {
             <Badge className="m-1" variant="outline">
               <Image className="m-2" src="/images/stitch.png" alt="Stitch logo" width={20} height={20} />
               Stitch
-            </Badge>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
-            DevOps
-          </h3>
-          <div className="flex flex-wrap gap-2" >
-            <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/git.png" alt="git logo" width={20} height={20} />
-              git
-            </Badge>
-            <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/github.png" alt="GitHub logo" width={20} height={20} />
-              GitHub Actions
-            </Badge>
-            <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/gitlab.png" alt="Gitlab logo" width={20} height={20} />
-              GitLab CI
-            </Badge>
-            <Badge className="m-1" variant="outline">
-              <Image className="m-2" src="/images/docker.png" alt="Docker logo" width={20} height={20} />
-              Docker
             </Badge>
           </div>
         </div>
@@ -112,7 +74,7 @@ export function Skills() {
         </div>
         <div>
           <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
-            Data sourcing (databases, events &amp; SaaS)
+            Data sources
           </h3>
           <div className="flex flex-wrap gap-2" >
             <Badge className="m-1" variant="outline">
@@ -150,6 +112,44 @@ export function Skills() {
             <Badge className="m-1" variant="outline">
               <Image className="m-2" src="/images/pubsub.svg" alt="PubSub logo" width={20} height={20} />
               PubSub
+            </Badge>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+            Programming
+          </h3>
+          <div className="flex flex-wrap gap-2" >
+            <Badge className="m-1" variant="outline">
+              <Image className="m-2" src="/images/python.png" alt="Python logo" width={20} height={20} />
+              Python
+            </Badge>
+            <Badge className="m-1" variant="outline">
+              <Image className="m-2" src="/images/sql.png" alt="SQL logo" width={20} height={20} />
+              SQL
+            </Badge>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+            DevOps
+          </h3>
+          <div className="flex flex-wrap gap-2" >
+            <Badge className="m-1" variant="outline">
+              <Image className="m-2" src="/images/git.png" alt="git logo" width={20} height={20} />
+              git
+            </Badge>
+            <Badge className="m-1" variant="outline">
+              <Image className="m-2" src="/images/github.png" alt="GitHub logo" width={20} height={20} />
+              GitHub Actions
+            </Badge>
+            <Badge className="m-1" variant="outline">
+              <Image className="m-2" src="/images/gitlab.png" alt="Gitlab logo" width={20} height={20} />
+              GitLab CI
+            </Badge>
+            <Badge className="m-1" variant="outline">
+              <Image className="m-2" src="/images/docker.png" alt="Docker logo" width={20} height={20} />
+              Docker
             </Badge>
           </div>
         </div>

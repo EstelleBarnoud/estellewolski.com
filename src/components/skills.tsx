@@ -39,6 +39,14 @@ const skills = [
         image: "/images/looker.png",
       },
       {
+        name: "Hex",
+        image: "/images/hex.png",
+      },
+      {
+        name: "Preset",
+        image: "/images/preset.png",
+      },
+      {
         name: "Power BI",
         image: "/images/powerbi.png",
       },

@@ -38,8 +38,9 @@ const jobs = [
       ]
   },
   {
-    title: "Data Scientist & Analyst, Revenue Growth Management – Advanced Analytics",
+    title: "Data Scientist & Analyst",
     company: "L’Oréal",
+    subtitle: "Revenue Growth Management – Advanced Analytics",
     image: 'loreal.png',
     isPartTime: false,
     description: [
@@ -62,6 +63,7 @@ const jobs = [
   {
     title: "Data Science Consultant",
     company: "Bill & Melinda Gates Foundation",
+    subtitle: "Columbia University Program",
     image: 'bill-melinda-gates-foundation.jpg',
     isPartTime: true,
     description: [
@@ -93,6 +95,11 @@ export function Work() {
               <CardTitle className="text-lg font-semibold group-hover:text-gray-800 dark:group-hover:text-gray-200">
                 {job.title}
               </CardTitle>
+              {job.subtitle && (
+                <CardDescription className="text-md text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-400">
+                  {job.subtitle}
+                </CardDescription>
+              )}
               <CardDescription className="text-sm text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-400">
                 {job.company}
               </CardDescription>

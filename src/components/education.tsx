@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function Education() {
 
   return (
@@ -8,7 +10,7 @@ export function Education() {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" >
         <div className="flex items-center" >
-          <img
+          <Image
             alt="Columbia University Logo"
             className="w-24 h-24 object-cover rounded-lg"
             height="100"
@@ -25,7 +27,7 @@ export function Education() {
           </div>
         </div>
         <div className="flex items-center" >
-          <img
+          <Image
             alt="Télécom Paris Logo"
             className="w-24 h-24 object-cover rounded-lg"
             height="100"

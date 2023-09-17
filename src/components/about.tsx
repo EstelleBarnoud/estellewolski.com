@@ -1,9 +1,11 @@
+import Image from "next/image"
+
 export function About() {
 
     return(
         <section className="mb-16 flex" id="about">
             <div className="mr-8" >
-            <img alt="Profile Picture" className="rounded-full" src="/images/profile.jpeg" height="100" width="100" />
+            <Image alt="Profile Picture" className="rounded-full" src="/images/profile.jpeg" height="100" width="100" />
             </div>
             <div >
             <h1 className="text-5xl font-bold text-black dark:text-white" >

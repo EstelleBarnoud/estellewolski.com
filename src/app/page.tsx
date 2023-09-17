@@ -3,13 +3,13 @@ import { Work } from "@/components/work";
 import { Education } from "@/components/education";
 import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Separator } from "@/components/ui/separator";
+import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (
     <main className="p-24">
-      <ModeToggle />
+      <Navigation />
       <About />
       <Work />
       <Education />

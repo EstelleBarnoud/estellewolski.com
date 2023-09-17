@@ -1,0 +1,66 @@
+import Link from "next/link"
+import { ModeToggle } from "@/components/mode-toggle";
+
+export function Navigation() {
+  return (
+    <section className="w-full py-12 md:py-24 lg:py-32">
+      <nav className="container px-4 mx-auto space-y-2 md:space-y-0 md:flex md:justify-between md:items-center">
+        <div className="flex items-center justify-between">
+          <div>
+            <Link
+              className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
+              href="#"
+            >
+              My Portfolio
+            </Link>
+          </div>
+          <div className="flex md:hidden">
+            <button
+              aria-label="toggle menu"
+              className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+              type="button"
+            >
+              <svg
+                className=" w-6 h-6 fill-current"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className="space-x-4 md:space-x-8">
+          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#">
+            Home
+          </Link>
+          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#about">
+            About
+          </Link>
+          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#work">
+            Work
+          </Link>
+          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#education">
+            Education
+          </Link>
+          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#skills">
+            Skills
+          </Link>
+          <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href="#contact">
+            Contact
+          </Link>
+        <ModeToggle />
+        </div>
+      </nav>
+    </section>
+  )
+}

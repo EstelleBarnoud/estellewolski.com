@@ -27,7 +27,7 @@ const sections = [
 export function Navigation() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
-      <nav className="container px-4 mx-auto space-y-2 md:space-y-0 md:flex md:justify-between md:items-center">
+      <nav className="px-4 mx-auto space-y-2 md:space-y-0 md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <div>
             <Link

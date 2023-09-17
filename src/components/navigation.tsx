@@ -3,12 +3,8 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 const sections = [
   {
-    name: "Home",
-    href: "#",
-  },
-  {
     name: "About",
-    href: "#about",
+    href: "#",
   },
   {
     name: "Work",

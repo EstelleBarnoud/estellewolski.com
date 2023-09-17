@@ -1,11 +1,13 @@
 import Image from "next/image"
 import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 const jobs = [
   {
     title: "Senior Analytics Engineer",
     company: "Vercel",
     image: 'vercel.jpeg',
+    isPartTime: false,
     description: [
         "Build and maintain reliable, timely data assets at scale through modern data stack",
         "Enable data-driven decisions through self-service analytics",
@@ -16,6 +18,7 @@ const jobs = [
     title: "Senior Analytics Engineer",
     company: "dbt Labs",
     image: 'dbt-labs.png',
+    isPartTime: false,
     description: [
         "Led end-to-end data modeling projects from extraction, load & transformation to self-service. Maintained 1000+ models across 30+ sources for self-service",
         "Reduced CI time from 1h+ to <2min through the implementation of a deploy job & model config optimization",
@@ -26,6 +29,7 @@ const jobs = [
     title: "Senior Analytics Engineer, Data Engineer",
     company: "Gojob",
     image: 'gojob.png',
+    isPartTime: false,
     description: [
         "Reduced number of customer escalations from 20 to 2 per month by migrating data models from old stack (Airflow, DOMO) to new (dbt, BigQuery, Fivetran)",
         "Cut number of incidents by half by setting up automatic tests both on a daily basis to proactively fix data quality issues and on code changes for continuous integration",
@@ -37,6 +41,7 @@ const jobs = [
     title: "Data Scientist & Analyst, Revenue Growth Management – Advanced Analytics",
     company: "L’Oréal",
     image: 'loreal.png',
+    isPartTime: false,
     description: [
       "Saved $10M+ in portfolio & pricing optimization by designing hierarchical Bayes estimation with choice-based conjoint research to understand customer behavior",
       "Used Machine Learning to provide quantitative & qualitative recommendations based on customer insight",
@@ -47,6 +52,7 @@ const jobs = [
     title: "Business Analyst",
     company: "CybelAngel",
     image: 'cybelangel.png',
+    isPartTime: false,
     description: [
       "Prepared business data & slides for pitch deck to raise $36M in series B round",
       "Analyzed & forecast marketing and sales performance to recommend data-driven strategies",
@@ -57,6 +63,7 @@ const jobs = [
     title: "Data Science Consultant",
     company: "Bill & Melinda Gates Foundation",
     image: 'bill-melinda-gates-foundation.jpg',
+    isPartTime: true,
     description: [
       "Applied statistical machine learning models to build linguistic glossaries",
       "Implemented recurrent neural network to translate languages with limited data",
@@ -75,6 +82,11 @@ export function Work() {
         {jobs.map((job, index) => (
           <Card key={index} className="group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
             <div className="max-h-64 overflow-hidden flex items-center">
+            {job.isPartTime && (
+              <Badge variant="secondary" className="absolute top-2 right-2 bg-opacity-75 bg-gray-500 text-white p-2 text-xs">
+                Part Time
+              </Badge>
+            )}
               <Image className="w-full h-0" src={`/images/${job.image}`} alt={`${job.company} banner`} width={200} height={200} layout="responsive" objectFit="cover" />
             </div>
             <CardHeader>

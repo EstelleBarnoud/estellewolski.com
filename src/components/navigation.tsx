@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link"
 import { ModeToggle } from "@/components/mode-toggle";
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
-import { Button } from "./ui/button";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 const sections = [
   {
@@ -67,7 +67,7 @@ export function Navigation() {
               <DropdownMenuContent align="end">
                 { sections.map((section, index) => (
                   <DropdownMenuItem>
-                    <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href={section.href} key={index}>
+                    <Link href={section.href} key={index}>
                       {section.name}
                     </Link>
                   </DropdownMenuItem>

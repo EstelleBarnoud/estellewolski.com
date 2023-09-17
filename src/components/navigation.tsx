@@ -66,8 +66,8 @@ export function Navigation() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 { sections.map((section, index) => (
-                  <DropdownMenuItem>
-                    <Link href={section.href} key={index}>
+                  <DropdownMenuItem key={index}>
+                    <Link href={section.href}>
                       {section.name}
                     </Link>
                   </DropdownMenuItem>

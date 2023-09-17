@@ -9,7 +9,7 @@ export function Skills() {
       <h2 className="text-4xl font-bold text-black dark:text-white mb-8" >
         Skills
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-3 gap-8">
         <div>
           <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
             Programming

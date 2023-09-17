@@ -67,7 +67,7 @@ const jobs = [
 export function Work() {
   return (
 
-    <section className="px-4 mt-32 mb-32" id="work">
+    <section className="px-4 pt-32 mb-32" id="work">
       <h2 className="text-4xl text-black dark:text-white mb-8" >
         Work experience
       </h2>

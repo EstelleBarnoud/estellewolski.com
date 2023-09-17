@@ -162,7 +162,7 @@ export function Skills() {
 
   return (
 
-    <section className="px-4 mt-32" id="skills">
+    <section className="px-4 pt-32" id="skills">
       <h2 className="text-4xl text-black dark:text-white mb-8" >
         Skills
       </h2>

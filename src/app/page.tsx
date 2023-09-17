@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
 import { Education } from "@/components/education";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Skills } from "@/components/skills";
@@ -12,6 +13,7 @@ export default function Home() {
       <Education />
       <Separator className="my-8" />
       <Skills />
+      <Contact />
     </main>
   )
 }

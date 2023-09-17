@@ -39,7 +39,7 @@ export function Education() {
               Télécom Paris - <span className="font-extralight">Institut Polytechnique de Paris</span>
             </h4>
             <p className="ml-4 text-gray-600 dark:text-gray-400" >
-              Master of Science (Diplôme d’ingénieur), Data Science
+              Master of Science (Diplôme d&apos;ingénieur), Data Science
             </p>
           </div>
         </div>

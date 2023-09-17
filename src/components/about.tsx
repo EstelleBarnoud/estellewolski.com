@@ -9,10 +9,10 @@ export function About() {
             </div>
             <div >
             <h1 className="text-5xl font-bold text-black dark:text-white" >
-                Hello, I'm Estelle!
+                Hello, I&apos;m Estelle!
             </h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400" >
-                I'm a Senior Engineer specialized in Analytics Engineering to provide reliable, timely data to the entire organization ✨.
+                I&apos;m a Senior Engineer specialized in Analytics Engineering to provide reliable, timely data to the entire organization ✨.
             </p>
             </div>
         </section>

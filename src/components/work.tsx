@@ -7,6 +7,7 @@ const jobs = [
     title: "Senior Analytics Engineer",
     company: "Vercel",
     image: 'vercel.jpeg',
+    priority: true,
     isPartTime: false,
     description: [
         "Build and maintain reliable, timely data assets at scale through modern data stack",
@@ -89,7 +90,7 @@ export function Work() {
                 Part Time
               </Badge>
             )}
-              <Image className="w-full h-0 object-cover" src={`/images/${job.image}`} alt={`${job.company} banner`} width={200} height={200} layout="responsive" />
+              <Image className="w-full h-0 object-cover" src={`/images/${job.image}`} alt={`${job.company} banner`} priority={job.priority} width={200} height={200} layout="responsive" />
             </div>
             <CardHeader>
               <CardTitle className="text-lg font-semibold group-hover:text-gray-800 dark:group-hover:text-gray-200">

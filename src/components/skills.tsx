@@ -6,12 +6,12 @@ export function Skills() {
   return (
 
     <section className="mb-16" id="skills">
-      <h2 className="text-4xl font-bold text-black dark:text-white mb-8" >
+      <h2 className="text-4xl text-black dark:text-white mb-8" >
         Skills
       </h2>
       <div className="grid grid-cols-3 gap-8">
         <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+          <h3 className="text-xl text-black dark:text-white mb-4" >
             Analytics engineering &amp; data pipelines
           </h3>
           <div className="flex flex-wrap gap-2" >
@@ -42,7 +42,7 @@ export function Skills() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+          <h3 className="text-xl text-black dark:text-white mb-4" >
             Data Visualization &amp; Analysis
           </h3>
           <div className="flex flex-wrap gap-2" >
@@ -73,7 +73,7 @@ export function Skills() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+          <h3 className="text-xl text-black dark:text-white mb-4" >
             Data sources
           </h3>
           <div className="flex flex-wrap gap-2" >
@@ -116,7 +116,7 @@ export function Skills() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+          <h3 className="text-xl text-black dark:text-white mb-4" >
             Programming
           </h3>
           <div className="flex flex-wrap gap-2" >
@@ -131,7 +131,7 @@ export function Skills() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+          <h3 className="text-xl text-black dark:text-white mb-4" >
             DevOps
           </h3>
           <div className="flex flex-wrap gap-2" >
@@ -154,7 +154,7 @@ export function Skills() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4" >
+          <h3 className="text-xl text-black dark:text-white mb-4" >
             Web Development (side projects)
           </h3>
           <div className="flex flex-wrap gap-2" >

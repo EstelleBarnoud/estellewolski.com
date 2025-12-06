@@ -19,9 +19,20 @@ n <version>
 ```
 > Tip: to install the latest Long Time Support version, run n lst. Note: you might need to prepend sudo to ensure you have the right permissions.
 
-[Optional] Install yarn:
-```
+[Optional] Install your preferred package manager, for example:
+```bash
 npm install --global yarn
+# or
+npm install -g pnpm
+```
+
+Install project dependencies with your chosen package manager:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
 ```
 
 ## Develop

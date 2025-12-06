@@ -92,7 +92,7 @@ export function Navigation() {
             <ModeToggle />
           </div>
         </div>
-        <div className="hidden md:block space-x-4 md:space-x-8">
+        <div className="hidden md:flex md:items-center space-x-4 md:space-x-8">
           { sections.map((section, index) => (
             <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href={section.href} key={index}>
               {section.name}

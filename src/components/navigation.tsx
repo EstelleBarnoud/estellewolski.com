@@ -34,10 +34,10 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <div>
             <Link
-              className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
+              className="text-xl font-bold text-gray-800 dark:text-white lg:text-xl hover:text-gray-700 dark:hover:text-gray-300"
               href="#"
             >
-              My Portfolio
+              Estelle Wolski's Portfolio
             </Link>
           </div>
           <div className="flex md:hidden space-x-4">

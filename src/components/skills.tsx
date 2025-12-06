@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 
 const skills = [
   {
-    title: "Analytics Engineering & Data Pipelines",
+    title: "Data Pipelines",
     badges: [
       {
         name: "dbt",

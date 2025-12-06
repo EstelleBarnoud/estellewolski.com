@@ -42,6 +42,10 @@ const skills = [
         name: "SQL",
         image: "/images/sql.png",
       },
+      {
+        name: "Bash",
+        image: "/images/bash.png",
+      },
     ],
   },
   {

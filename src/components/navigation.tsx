@@ -37,7 +37,7 @@ export function Navigation() {
               className="text-xl font-bold text-gray-800 dark:text-white lg:text-xl hover:text-gray-700 dark:hover:text-gray-300"
               href="#"
             >
-              Estelle Wolski's Portfolio
+              Estelle Wolski&apos;s Portfolio
             </Link>
           </div>
           <div className="flex md:hidden space-x-4">

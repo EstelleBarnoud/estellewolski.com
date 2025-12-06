@@ -66,10 +66,25 @@ export function Navigation() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 { sections.map((section, index) => (
-                  <DropdownMenuItem key={index}>
-                    <Link href={section.href}>
-                      {section.name}
-                    </Link>
+                  <DropdownMenuItem
+                    key={index}
+                    onSelect={() => {
+                      // Delay to let dropdown fully close
+                      setTimeout(() => {
+                        // Blur the trigger first to prevent focus-induced scroll back
+                        if (document.activeElement instanceof HTMLElement) {
+                          document.activeElement.blur();
+                        }
+                        // Scroll to target element
+                        const selector = section.href === "#" ? "body" : section.href;
+                        const target = document.querySelector(selector);
+                        if (target) {
+                          target.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }
+                      }, 150);
+                    }}
+                  >
+                    {section.name}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>

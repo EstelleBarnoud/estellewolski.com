@@ -22,7 +22,7 @@ export function Education() {
 
   return (
 
-    <section className="px-4 pt-32 mb-32" id="education">
+    <section className="px-4 pt-16 mb-16 md:pt-32 md:mb-32" id="education">
       <h2 className="text-4xl text-black dark:text-white mb-8" >
         Education
       </h2>

@@ -114,9 +114,14 @@ function FlipCard({ job, index }: { job: typeof jobs[0], index: number }) {
         <Card className="absolute inset-0 backface-hidden overflow-hidden group">
           <div className="relative h-52 overflow-hidden">
             {job.isPartTime && (
-              <Badge variant="secondary" className="absolute top-2 right-2 z-10 bg-slate-800/80 text-white px-2 py-0.5 text-xs backdrop-blur-sm">
-                Part Time
-              </Badge>
+              <div className="absolute top-3 right-3 z-10">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-white/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 shadow-md backdrop-blur-sm ring-1 ring-slate-200/50 dark:ring-slate-700/50">
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Part Time
+                </span>
+              </div>
             )}
             <Image 
               className="object-cover transition-transform duration-500 group-hover:scale-105" 

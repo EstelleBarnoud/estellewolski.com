@@ -141,6 +141,10 @@ const skills = [
         name: "Docker",
         image: "/images/docker.png",
       },
+      {
+        name: "Terraform",
+        image: "/images/terraform.webp",
+      },
     ],
   },
   {

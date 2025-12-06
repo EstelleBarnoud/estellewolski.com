@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 
 const jobs = [
   {
-    title: "Senior Analytics Engineer",
+    title: "Senior Analytics Engineering Manager",
     company: "Vercel",
     image: 'vercel.jpeg',
     isPartTime: false,

@@ -12,7 +12,7 @@ export function About() {
                     Hello, I&apos;m Estelle!
                 </h1>
                 <p className="mt-4 text-lg text-gray-600 dark:text-gray-400" >
-                    I&apos;m a Senior Engineer specialized in Analytics Engineering to provide reliable, timely data to the entire organization ✨.
+                    I&apos;m an Engineer Manager specialized in Analytics Engineering to provide reliable, timely data to the entire organization ✨.
                 </p>
             </div>
         </section>

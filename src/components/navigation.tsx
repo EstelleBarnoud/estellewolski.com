@@ -66,10 +66,25 @@ export function Navigation() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 { sections.map((section, index) => (
-                  <DropdownMenuItem key={index}>
-                    <Link href={section.href}>
-                      {section.name}
-                    </Link>
+                  <DropdownMenuItem
+                    key={index}
+                    onSelect={() => {
+                      // Delay to let dropdown fully close
+                      setTimeout(() => {
+                        // Blur the trigger first to prevent focus-induced scroll back
+                        if (document.activeElement instanceof HTMLElement) {
+                          document.activeElement.blur();
+                        }
+                        // Scroll to target element
+                        const selector = section.href === "#" ? "body" : section.href;
+                        const target = document.querySelector(selector);
+                        if (target) {
+                          target.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }
+                      }, 150);
+                    }}
+                  >
+                    {section.name}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -77,7 +92,7 @@ export function Navigation() {
             <ModeToggle />
           </div>
         </div>
-        <div className="hidden md:block space-x-4 md:space-x-8">
+        <div className="hidden md:flex md:items-center space-x-4 md:space-x-8">
           { sections.map((section, index) => (
             <Link className="text-gray-700 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-300" href={section.href} key={index}>
               {section.name}

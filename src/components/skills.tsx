@@ -3,19 +3,19 @@ import { Badge } from "@/components/ui/badge"
 
 const skills = [
   {
-    title: "Analytics Engineering & Data Pipelines",
+    title: "Data Pipelines",
     badges: [
       {
         name: "dbt",
         image: "/images/dbt.png",
       },
       {
-        name: "BigQuery",
-        image: "/images/bigquery.png",
-      },
-      {
         name: "Snowflake",
         image: "/images/snowflake.png",
+      },
+      {
+        name: "BigQuery",
+        image: "/images/bigquery.png",
       },
       {
         name: "Airflow",
@@ -28,6 +28,48 @@ const skills = [
       {
         name: "Stitch",
         image: "/images/stitch.png",
+      },
+    ],
+  },
+  {
+    title: "Programming",
+    badges: [
+      {
+        name: "Python",
+        image: "/images/python.png",
+      },
+      {
+        name: "SQL",
+        image: "/images/sql.png",
+      },
+      {
+        name: "Bash",
+        image: "/images/bash.png",
+      },
+    ],
+  },
+  {
+    title: "DevOps",
+    badges: [
+      {
+        name: "git",
+        image: "/images/git.png",
+      },
+      {
+        name: "GitHub Actions",
+        image: "/images/github.png",
+      },
+      {
+        name: "GitLab CI",
+        image: "/images/gitlab.png",
+      },
+      {
+        name: "Docker",
+        image: "/images/docker.png",
+      },
+      {
+        name: "Terraform",
+        image: "/images/terraform.webp",
       },
     ],
   },
@@ -80,6 +122,10 @@ const skills = [
         image: "/images/mongodb.png",
       },
       {
+        name: "Pendo",
+        image: "/images/pendo.jpeg",
+      },
+      {
         name: "Salesforce",
         image: "/images/salesforce.png",
       },
@@ -92,10 +138,6 @@ const skills = [
         image: "/images/zendesk.png",
       },
       {
-        name: "Pendo",
-        image: "/images/pendo.jpeg",
-      },
-      {
         name: "Google Analytics",
         image: "/images/google_analytics.webp",
       },
@@ -104,46 +146,7 @@ const skills = [
         image: "/images/airtable.png",
       },
       {
-        name: "PubSub",
-        image: "/images/pubsub.svg",
-      },
-    ],
-  },
-  {
-    title: "Programming",
-    badges: [
-      {
-        name: "Python",
-        image: "/images/python.png",
-      },
-      {
-        name: "SQL",
-        image: "/images/sql.png",
-      },
-    ],
-  },
-  {
-    title: "DevOps",
-    badges: [
-      {
-        name: "git",
-        image: "/images/git.png",
-      },
-      {
-        name: "GitHub Actions",
-        image: "/images/github.png",
-      },
-      {
-        name: "GitLab CI",
-        image: "/images/gitlab.png",
-      },
-      {
-        name: "Docker",
-        image: "/images/docker.png",
-      },
-      {
-        name: "Terraform",
-        image: "/images/terraform.webp",
+        name: "...",
       },
     ],
   },
@@ -174,11 +177,11 @@ export function Skills() {
 
   return (
 
-    <section className="px-4 pt-32" id="skills">
+    <section className="px-4 pt-16 md:pt-32" id="skills">
       <h2 className="text-4xl text-black dark:text-white mb-8" >
         Skills
       </h2>
-      <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-14">
         { skills.map((skill, index) => (
           <div key={index}>
             <h3 className="text-xl text-black dark:text-white mb-4" >
@@ -186,8 +189,8 @@ export function Skills() {
             </h3>
             <div className="flex flex-wrap gap-2" >
               { skill.badges.map((badge, index) => (
-                <Badge className="m-1" key={index} variant="outline">
-                  <Image className="m-2 rounded" src={badge.image} alt={`${badge.name} logo`} width={20} height={20} />
+                <Badge className={`m-1 ${!badge.image ? 'h-9 px-5 tracking-widest' : ''}`} key={index} variant="outline">
+                  {badge.image && <Image className="m-2 rounded" src={badge.image} alt={`${badge.name} logo`} width={20} height={20} />}
                   {badge.name}
                 </Badge>
               ))}

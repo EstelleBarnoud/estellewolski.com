@@ -9,7 +9,7 @@ const jobs = [
   {
     company: "Vercel",
     image: 'vercel.jpeg',
-    logo: 'https://logo.clearbit.com/vercel.com',
+    logo: '/images/vercel-logo.webp',
     isPartTime: false,
     positions: [
       { title: "Senior Analytics Engineering Manager", period: "Nov 2024 - Present" },
@@ -25,7 +25,7 @@ const jobs = [
   {
     company: "dbt Labs",
     image: 'dbt-labs.png',
-    logo: 'https://logo.clearbit.com/getdbt.com',
+    logo: '/images/dbt-logo.png',
     isPartTime: false,
     positions: [
       { title: "Senior Analytics Engineer", period: "Oct 2022 - May 2023" },
@@ -39,7 +39,7 @@ const jobs = [
   {
     company: "Gojob",
     image: 'gojob.png',
-    logo: 'https://logo.clearbit.com/gojob.com',
+    logo: '/images/gojob-logo.jpeg',
     isPartTime: false,
     positions: [
       { title: "Senior Analytics Engineer | Data Engineer", period: "Jan 2022 - Jul 2022" },
@@ -55,7 +55,7 @@ const jobs = [
     company: "L'Oréal",
     subtitle: "Revenue Growth Management – Advanced Analytics",
     image: 'loreal.png',
-    logo: 'https://logo.clearbit.com/loreal.com',
+    logo: '/images/loreal-logo.png',
     isPartTime: false,
     positions: [
       { title: "Data Scientist & Analyst", period: "Feb 2020 - Dec 2020" },
@@ -69,7 +69,7 @@ const jobs = [
   {
     company: "CybelAngel",
     image: 'cybelangel.png',
-    logo: 'https://logo.clearbit.com/cybelangel.com',
+    logo: '/images/cybelangel-logo.png',
     isPartTime: false,
     positions: [
       { title: "Business Analyst", period: "May 2019 - Feb 2020" },
@@ -84,7 +84,7 @@ const jobs = [
     company: "Bill & Melinda Gates Foundation",
     subtitle: "Columbia University Program",
     image: 'bill-melinda-gates-foundation.jpg',
-    logo: 'https://logo.clearbit.com/gatesfoundation.org',
+    logo: '/images/gates-foundation-logo.jpg',
     isPartTime: true,
     positions: [
       { title: "Data Science Consultant", period: "Sep 2018 - May 2019" },
@@ -190,7 +190,6 @@ function FlipCard({ job, index }: { job: typeof jobs[0], index: number }) {
                     width={48} 
                     height={48}
                     className="object-contain w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="min-w-0 flex-1">
